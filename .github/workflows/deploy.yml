@@ -36,6 +36,8 @@ jobs:
 
       - name: Build Next.js static site
         run: pnpm build
+        env:
+          NODE_ENV: production
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
