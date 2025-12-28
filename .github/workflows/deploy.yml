@@ -38,6 +38,7 @@ jobs:
         run: pnpm build
         env:
           NODE_ENV: production
+          NEXT_TELEMETRY_DISABLED: 1
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
